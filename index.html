@@ -3,40 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps with Google Cloud</title>
+    <title>Cloud and DevOps Information</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-    <h1>DevOps with Google Cloud</h1>
+    <h1>Cloud and DevOps Information</h1>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
+        <a href="#gcp">GCP</a>
+        <a href="#aws">AWS</a>
+        <a href="#devops">DevOps</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <div class="container">
-    <div class="content">
-        <div class="card">
-            <img src="devops1.jpg" alt="DevOps Image 1">
-            <div class="card-content">
-                <h2 class="card-title">Google Kubernetes Engine</h2>
-                <p class="card-text">Google Kubernetes Engine (GKE) is a managed Kubernetes service that lets you run containerized applications on Google Cloud. It automates the deployment, scaling, and management of Kubernetes clusters.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="devops2.jpg" alt="DevOps Image 2">
-            <div class="card-content">
-                <h2 class="card-title">Cloud Build</h2>
-                <p class="card-text">Cloud Build is a CI/CD service that lets you automate your builds, tests, and deployments. It integrates seamlessly with other Google Cloud services and supports various programming languages and build environments.</p>
-            </div>
-        </div>
-    </div>
+    <section id="gcp">
+        <h2>Google Cloud Platform (GCP)</h2>
+        <p>Google Cloud Platform (GCP) is a suite of cloud computing services offered by Google. It provides a range of services including computing, storage, and networking, and runs on the same infrastructure that Google uses internally for its end-user products, such as Google Search and YouTube.</p>
+       <!-- <img src="gcp_overview.jpg" alt="GCP Overview">-->
+    </section>
+
+    <section id="aws">
+        <h2>Amazon Web Services (AWS)</h2>
+        <p>Amazon Web Services (AWS) is a comprehensive and widely adopted cloud platform, offering over 200 fully featured services from data centers globally. Millions of customers—including the fastest-growing startups, largest enterprises, and leading government agencies—are using AWS to lower costs, become more agile, and innovate faster.</p>
+       <!-- <img src="aws_overview.jpg" alt="AWS Overview">-->
+    </section>
+
+    <section id="devops">
+        <h2>DevOps</h2>
+        <p>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. DevOps complements Agile software development; several DevOps aspects came from Agile methodology.</p>
+        <!-- <img src="devops_overview.jpg" alt="DevOps Overview">  -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 </div>
 
 <footer>
-    <p>&copy; 2024 DevOps with Google Cloud. All rights reserved.</p>
+    <p>&copy; 2024 Cloud and DevOps Information. All rights reserved.</p>
 </footer>
 
 </body>
